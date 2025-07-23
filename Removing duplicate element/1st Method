@@ -1,0 +1,11 @@
+class Solution(object):
+    def removeDuplicates(self, nums):
+        unique_list = list(set(nums))
+        unique_list.sort()
+        print("List after removing duplicates:", unique_list)
+        print("Number of unique elements:", len(unique_list))
+        return len(unique_list)
+
+solution = Solution()
+nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+solution.removeDuplicates(nums)
