@@ -1,0 +1,9 @@
+class Solution(object):
+    def rotate(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: None
+        """
+        k = k % len(nums)  # To handle if k is bigger than array length
+        nums[:] = nums[-k:] + nums[:-k]  # Rotate the array in-place
